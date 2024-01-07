@@ -12,7 +12,7 @@
         placeholder="Enter task"
         class="w-100 form-control"
       />
-      <button class="btn rounded-0" @click="submitTask">
+      <button class="btn btn-dark rounded-0" @click="submitTask">
         SUBMIT
       </button>
     </div>
@@ -173,7 +173,6 @@ export default {
   color:green;
 }
 .btn{
-  background-color:black;
   color:white;
   font-weight:700;
 }
