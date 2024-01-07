@@ -2,7 +2,7 @@
 <template>
   <div class="container" style="max-width: 600px">
     <!-- Heading -->
-    <h2 class="text-center mt-5">My Vue Todo App</h2>
+    <h2 class="text-center mt-5">Todo App</h2>
 
     <!-- Input -->
     <div class="d-flex mt-5">
@@ -12,7 +12,7 @@
         placeholder="Enter task"
         class="w-100 form-control"
       />
-      <button class="btn btn-warning rounded-0" @click="submitTask">
+      <button class="btn rounded-0" @click="submitTask">
         SUBMIT
       </button>
     </div>
@@ -79,15 +79,15 @@ export default {
       /* Status could be: 'to-do' / 'in-progress' / 'finished' */
       tasks: [
         {
-          name: "Steal bananas from the supermarket.",
+          name: "Playing Game with Friends",
           status: "to-do",
         },
         {
-          name: "Eat 1 kg chocolate in 1 hour.",
+          name: "Morning workout 5am to 7am ",
           status: "in-progress",
         },
         {
-          name: "Create YouTube video.",
+          name: "Buy Some Diet Food",
           status: "finished",
         },
       ],
@@ -171,5 +171,10 @@ export default {
 }
 .fa-pen:hover{
   color:green;
+}
+.btn{
+  background-color:black;
+  color:white;
+  font-weight:700;
 }
 </style>
